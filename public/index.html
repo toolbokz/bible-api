@@ -89,7 +89,7 @@ function getBibleVersions() {
       }
     });
 
-    xhr.open(`GET`, `https://api.scripture.api.bible/v1/bibles?language=eng`);
+    xhr.open(`GET`, `https://api.scripture.api.bible/v1/bibles`);
     xhr.setRequestHeader(`api-key`, API_KEY);
 
     xhr.onerror = () => reject(xhr.statusText);
